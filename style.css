@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #003D73;
+  display: flex;
+  justify-content: space-between;
+  color: rgb(0, 0, 0);
+  height: 100vh;
+}
+
+.esquerda {
+  background-color: white;
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  height: 600px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+form p {
+  text-align: right;
+}
+
+.direita{
+  width: 55%;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+
+.direita img{
+  width: 86%;
+}
+
+.label-input {
+  display: flex;
+  flex-direction: column;
+  height: 40px;
+}
+
+.esquerda button{
+  background-color: #1B77C2;
+  cursor: pointer;
+  border: none;
+  padding: 12px 50px;
+  color: white;
+  font-size: 16px;
+}
+
+input[type=email],input[ type=password]{
+  padding: 20px;
+  height: 30px;
+  width: 100%;
+  border-color: black;
+  padding-left: 20px;
+  color: black;
+}
+
+.vector{
+  position: relative;
+  
+}
+
+.olho{
+  position: absolute;
+  top: 16px;
+  right: 15px;
+  cursor: pointer;
+  width: 17px;
+}
+
+.logo {
+  width: 200px;
+}
+
+.baixo {
+  color: #938686;
+  bottom: 1%;
+  position: fixed;
+  width: 90%;
+  text-align: center;
+}
+
+.logo2{
+  display: none;
+  width: 89%;
+}
+
+@media screen and (max-width: 700px) {
+  .direita {
+    display: none;
+  }
+
+  .esquerda {
+    width: 100%;
+    background-image: url(img/fundomobile\ 1.png);
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .logo2 {
+    display: flex;
+  }
+}
